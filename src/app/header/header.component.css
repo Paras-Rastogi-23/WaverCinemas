@@ -1,0 +1,9 @@
+.navbar.navbar-invers{
+    position: fixed;
+}
+.nav.navbar-nav li h3{
+    margin: auto;   
+}
+.nav.navbar-nav.navbar-right li h3{
+    margin: auto;
+}

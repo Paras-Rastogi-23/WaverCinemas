@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@media screen and (max-width: 986px) {
+    .main-box {
+      width: 80%;
+    }
+  }@media screen and (max-width: 600px) {
+    .small-box {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 style="text-align: center; background-color:rgb(53, 50, 50); color:rgb(228, 217, 216);"><i>My Bookings</i></h1>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="cards" *ngFor="let movie of movies">
+                <a style ="cursor: pointer;" class ="list-group-item clearfix" style="background-color: rgb(228, 217, 216);">
+                    <div class="pull-left">
+                      
+                      <h4 class="list-group-item-heading"><strong>Movie/Event :<i>{{movie.movieName}}</i></strong></h4>
+                      <br>
+                      <strong><p class="list-group-item-text">Time :<i>{{movie.time }}</i></p></strong>
+                      <br>
+                      <strong><p class="list-group-item-heading">Number of Members :<i>{{movie.members}}</i></p></strong>
+                    </div>
+                    <span class="pull-right">
+                        <img
+                          src="{{movie.imagePath}}"
+                          alt="{{movie.movieName}}"
+                          class="img-responsive"
+                          style="max-height: 100px;">
+                    </span>
+              </a>
+              <br>
+            </div>
+            
+        </div>
+    </div>
+</div>

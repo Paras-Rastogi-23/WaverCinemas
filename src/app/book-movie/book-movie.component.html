@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row" style="border: 10px solid black; padding: 20px;">
+             <div class="col-xs-12">
+                <form>
+                 <div class="row" style="text-align: center;"> 
+                    <h3>
+                        <label for="name">Movie Name:</label><br>                      
+                    <select>  
+                        <option>- Select Movie -</option >
+                        <option *ngFor="let movie of moviesList">{{movie.name}}</option>                                  
+                    </select>
+                    </h3>
+                    <br><br>
+                    <h3>
+                        <label for="time">Movie Time</label><br>
+                        <select >  
+                            <option>- Select Time -</option >
+                            <option *ngFor="let time of timeSchedule">{{time.time}}</option>                                  
+                        </select> 
+                    </h3>
+                    <br><br>
+                    <h3>
+                        <label for="number">Number Of Members </label><br>
+                        <input type="number" >
+                    </h3>
+                    <br><br>
+                 </div>  
+                 
+                 <div class="row" style="text-align: center;">
+                     <div class="col-xs-12">
+                         <button
+                         type="submit"
+                         class="btn btn-success">Add Movie</button>
+                         <button
+                         type="button"
+                         class="btn btn-danger" style="margin-left: 1%;">Cancel Movie</button>
+                     </div>
+                 </div>
+                </form>
+             </div>
+         </div>
+     
+</div>
